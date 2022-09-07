@@ -1,0 +1,127 @@
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  width: 3.5%;
+  margin: 1%;
+  background-color:#f8f8ff;
+  border-radius: 5px;
+}
+
+.icon-item img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 12%;
+}
+
+.active {
+  border-left-width: 4px;
+  background-color: rgb(249 250 251);
+  border-color: #667eea !important;
+
+}
+
+
+
+
+
+
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  /* opacity: 0; */
+  display: none;
+  /* -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s; */
+  /* transition: all 0.3s; */
+}
+
+.modal-window:target {
+  opacity: 1;
+}
+
+.modal-window > div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: #000;
+  line-height: 50px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+
+#icon-item-modal-display svg{
+  display: block;
+  margin: auto;
+  height: 34vh;
+  width: 34vh;
+}
+
+.pulse {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 rgba(118, 32, 216, 0.4);
+  animation: pulse 1s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(118, 32, 216, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(49, 10, 192, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(15, 2, 136, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(118, 32, 216, 0.4);
+    box-shadow: 0 0 0 0 rgba(118, 32, 216, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(49, 10, 192, 0);
+      box-shadow: 0 0 0 20px rgba(49, 10, 192, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(15, 2, 136, 0);
+      box-shadow: 0 0 0 0 rgba(15, 2, 136, 0);
+  }
+}

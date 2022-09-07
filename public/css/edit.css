@@ -1,0 +1,83 @@
+#toolbar {
+  height: fit-content;
+  width: 55px;
+  position: fixed;
+  top: 20%;
+  left: 3%;
+}
+
+#toolbar div {
+  height: 32px;
+  width: 32px;
+}
+
+#toolbar div:hover{
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(168 85 247 /1);
+}
+
+/* Accordion styles */
+.accordions {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-label:hover {
+  background: #1a252f;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #22c55e;
+  cursor: pointer;
+}
+
+input:checked+.tab-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked~.tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.tab-content img {
+  padding: 8%;
+  background-color: rgb(249 250 251);
+  border-radius: 5px;
+  height: 110px;
+}
+
+#svg-section svg {
+  height: 30%;
+  width: 30%;
+  margin: auto;
+}

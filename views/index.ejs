@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/index.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body class="bg-gray-200 ">
+ 
+  <%- include('header') %>
+ 
+    <%- include('sidebar') %>
+      <%- include('loader') %>
+<input type="hidden" filenames_arr='<%=allFiles%>' id="allFiles_arr">
+<input type="hidden" filenames_arr='<%=JSON.stringify(files)%>' id="categories">
+
+        <div class="pt-40">
+          <div class="max-w-md mx-auto  rounded-lg  md:max-w-xl">
+            <div class="md:flex">
+              <div class="w-full p-3">
+                <div class="relative">
+                  <i class="absolute fa fa-search text-gray-400 top-5 left-4"></i>
+                  <input type="text"
+                    class=" h-14 w-full bg-white-200 px-12 rounded-full focus:outline-none hover:cursor-pointer"
+                    placeholder="Search Icons" id="search_icons" >
+                  <span class="absolute top-4 right-5 border-l border-white pl-4 text-gray-500 hover:cursor-pointer "><i
+                      class="fa-solid fa-microphone hover:text-green-500"
+                      onclick="$(`#open-voice-search-modal`).fadeIn('fast')"></i>
+                      <!-- <i class="fa-solid fa-camera pl-2 hover:text-green-500  "></i> -->
+                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a id="icons" class="ml-64">
+          <% allFiles.forEach((x)=>{
+            let filename = x.split('+')[0];
+            let category = x.split('+')[1];%>
+            <div class="icon-item" category="<%=category%>" filename="<%=filename%>">
+              <img src="/img/icons/<%=category%>/<%=filename%>" alt="">
+            </div>
+            <%})%>
+        </a>
+
+        <div id="open-icon-modal" class="modal-window" onclick="$(`#open-icon-modal`).fadeOut('fast')">
+          <div onclick="event.stopPropagation()">
+            <a title="Close" class="modal-close" onclick="$(`#open-icon-modal`).fadeOut('fast')">close
+              &times;</a>
+            <div id="icon-item-modal-display" class="border-b">
+            </div>
+            <div class="flex justify-around mt-8">
+              <button type="button"
+                class="text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 dark:shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                id="customize_btn"><i class="fa-solid fa-pen-to-square mr-2"></i>Customize</button>
+
+              <button type="button"
+                class="text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700  hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 dark:shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                onclick="downloadSVGAsText()"><i class="fa-solid fa-download mr-2"></i>Download</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="open-voice-search-modal" class="modal-window" onclick="voice_search_abort()">
+          <div onclick="event.stopPropagation()">
+            <a title="Close" class="modal-close" onclick="voice_search_abort()">close
+              &times;</a>
+            <h1>Speak Now</h1>
+            <div class="pulse bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 font-medium rounded-full text-3xl px-5 text-white py-2.5 text-center mb-2 block mx-auto">
+              <i class="fa-solid fa-microphone mt-6"></i>
+            </div>
+            <input type="text"
+              class="h-14 w-full bg-white-200 px-12 border-b rounded-full focus:outline-none hover:cursor-pointer mt-8" id="voice_result_input" >
+            <div class="flex justify-around mt-8">
+              <button type="button"
+                class="text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 dark:shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                id="voice-search-btn" ><i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
+            </div>
+          </div>
+        </div>
+
+        <%- include('footer') %>
+
+</body>
+<script src="/js/index.js"></script>
+<script>
+  $('#category-All,#nav-child-icons').addClass('active');
+</script>
+
+</html>

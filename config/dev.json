@@ -1,0 +1,6 @@
+{
+	"envName": "dev",
+	"PORT": 3001,
+	"hostname": "http://localhost:3001/",
+	"secure": false
+}

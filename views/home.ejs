@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/editor/favicon.svg" sizes="any" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    
+  <%- include('header') %>
+
+
+<!-- Section 2 -->
+<section class="px-2 py-32 bg-white md:px-0">
+  <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+    <div class="flex flex-wrap items-center sm:-mx-3">
+      <div class="w-full md:w-1/2 md:px-3">
+        <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+          <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <span class="block xl:inline">Useful Tools to</span>
+            <span class="block text-indigo-600 xl:inline">Help You Create SVG.</span>
+          </h1>
+          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">It's never been easier to build beautiful SVG exactly what you want.</p>
+          <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+            <a href="editroom" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
+             Take me to the Editroom
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+            <img src="img/home/cover.jpg">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-gray-50">
+    <div class="container items-center max-w-6xl px-4 px-5 mx-auto sm:px-20 md:px-32 lg:px-16">
+      <div class="flex flex-wrap items-center -mx-3 ">
+        <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0 -rotate-12"><img class="mx-auto sm:max-w-sm lg:max-w-full rounded-3xl" src="img/home/svg-cover.gif" alt="feature image"></div>
+        <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0 text-right">
+          <div class="w-full lg:max-w-md">
+            <h3 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Need SVG ? Don't Worry We got Your Back <i class="fa-regular fa-handshake"></i></h3>
+            <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">We have more than 5508+ rare SVG icons. So you can find out what you really want.</p>
+           
+            <button  onclick="window.location.href='/icons'" class="flex items-center w-48 px-4 ml-5 mt-3 py-2 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto ml-auto">
+             Find SVG
+              <i class="fa-solid fa-circle-arrow-right text-xl ml-2"></i>
+            </button> 
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+<!-- Section 3 -->
+<section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+            <img src="img/home/edit.svg" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 ">
+        </div>
+
+        <!-- Content -->
+        <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                Boost Productivity
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                Build an atmosphere that creates productivity in your organization and your company culture.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> Maximize productivity and growth
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> Speed past your competition
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> 24/7 support
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+    </div>
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Content -->
+        <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                Save Your Precious Time
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+                Save time and money with our revolutionary services.
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> We got more than 5508+ rare SVG icons
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> You can create your Own SVGs
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full"><span class="text-sm font-bold">✓</span></span> User friendly UI
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+            <img src="img/home/logo-design.svg" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32 mt-2">
+        </div>
+    </div>
+</section>
+
+<!-- Section 4 -->
+<section class="py-20 bg-gray-50">
+  <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+    <div class="flex flex-wrap items-center -mx-3">
+      <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+        <div class="w-full lg:max-w-md">
+          <h3 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Need SVG ? Don't Worry We got Your Back <i class="fa-regular fa-handshake"></i></h3>
+          <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">It's never been easier to build a business of your own. Our tools will help you with the following:</p>
+          <ul>
+            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px" viewBox="0 0 25 24" version="1.1">
+                    <g id="surface1">
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(42.352941%,38.823529%,100%);fill-opacity:1;" d="M 24.574219 0.433594 C 23.816406 -0.328125 22.304688 -0.0625 20.089844 1.21875 C 18.152344 2.335938 15.804688 4.160156 13.480469 6.355469 C 13.367188 6.464844 13.253906 6.570312 13.136719 6.679688 C 12.839844 6.964844 12.546875 7.253906 12.261719 7.539062 C 10.203125 9.605469 8.40625 11.722656 7.054688 13.667969 C 6.996094 13.71875 6.9375 13.773438 6.878906 13.832031 C 6.394531 14.316406 6.09375 14.9375 6.007812 15.609375 C 4.808594 15.539062 3.601562 16.035156 2.742188 16.984375 C 1.734375 18.09375 1.742188 19.15625 1.75 20.011719 C 1.757812 20.953125 1.765625 21.574219 0.527344 22.253906 C 0.0585938 22.511719 -0.015625 22.832031 0.00390625 23.054688 C 0.0234375 23.285156 0.160156 23.59375 0.699219 23.777344 C 1.113281 23.917969 1.757812 23.992188 2.488281 23.992188 C 3.070312 23.992188 3.707031 23.945312 4.320312 23.851562 C 5.59375 23.660156 7.320312 23.199219 8.328125 22.085938 C 9.097656 21.238281 9.484375 20.148438 9.425781 19.066406 C 10.101562 18.984375 10.730469 18.679688 11.222656 18.1875 C 11.277344 18.128906 11.332031 18.070312 11.382812 18.007812 C 13.324219 16.65625 15.433594 14.851562 17.492188 12.789062 C 17.777344 12.503906 18.066406 12.207031 18.351562 11.90625 C 18.457031 11.792969 18.566406 11.679688 18.671875 11.566406 C 20.859375 9.234375 22.679688 6.878906 23.796875 4.9375 C 25.074219 2.710938 25.335938 1.199219 24.574219 0.433594 Z M 7.5 21.332031 C 6.855469 22.042969 5.539062 22.570312 3.890625 22.78125 C 3.007812 22.894531 2.226562 22.886719 1.691406 22.832031 C 2.882812 21.925781 2.875 20.914062 2.867188 20.003906 C 2.859375 19.210938 2.855469 18.523438 3.566406 17.738281 C 4.230469 17.007812 5.160156 16.640625 6.066406 16.738281 C 6.175781 17.199219 6.394531 17.625 6.703125 17.992188 C 6.71875 18.015625 6.738281 18.035156 6.757812 18.054688 C 6.765625 18.066406 6.777344 18.078125 6.789062 18.089844 C 6.816406 18.121094 6.847656 18.15625 6.878906 18.1875 C 6.910156 18.21875 6.941406 18.246094 6.976562 18.277344 C 6.988281 18.289062 7 18.300781 7.011719 18.308594 C 7.03125 18.328125 7.050781 18.34375 7.070312 18.363281 C 7.429688 18.667969 7.847656 18.882812 8.300781 18.996094 C 8.386719 19.824219 8.097656 20.675781 7.5 21.332031 Z M 10.625 17.167969 C 10.621094 17.175781 10.613281 17.183594 10.605469 17.195312 C 10.550781 17.265625 10.496094 17.332031 10.433594 17.394531 C 10.0625 17.765625 9.570312 17.96875 9.050781 17.96875 C 8.984375 17.96875 8.921875 17.964844 8.855469 17.960938 C 8.851562 17.957031 8.847656 17.957031 8.84375 17.957031 C 8.734375 17.945312 8.628906 17.925781 8.527344 17.898438 C 8.519531 17.894531 8.515625 17.894531 8.507812 17.890625 C 8.488281 17.886719 8.46875 17.878906 8.453125 17.875 C 8.441406 17.871094 8.429688 17.867188 8.417969 17.863281 C 8.402344 17.859375 8.386719 17.851562 8.375 17.847656 C 8.355469 17.84375 8.339844 17.835938 8.324219 17.828125 C 8.3125 17.824219 8.304688 17.820312 8.292969 17.816406 C 8.269531 17.804688 8.242188 17.792969 8.21875 17.78125 C 8.214844 17.78125 8.214844 17.78125 8.214844 17.78125 C 8.160156 17.753906 8.101562 17.726562 8.046875 17.691406 C 8.019531 17.675781 7.996094 17.660156 7.972656 17.644531 C 7.96875 17.640625 7.964844 17.636719 7.960938 17.636719 C 7.9375 17.621094 7.917969 17.605469 7.898438 17.589844 C 7.890625 17.585938 7.886719 17.582031 7.878906 17.578125 C 7.863281 17.566406 7.84375 17.550781 7.824219 17.535156 C 7.820312 17.53125 7.8125 17.523438 7.804688 17.519531 C 7.789062 17.503906 7.769531 17.488281 7.753906 17.472656 C 7.746094 17.46875 7.742188 17.464844 7.734375 17.457031 C 7.714844 17.4375 7.691406 17.417969 7.667969 17.394531 C 7.648438 17.375 7.625 17.351562 7.605469 17.328125 C 7.597656 17.316406 7.585938 17.304688 7.574219 17.292969 C 7.566406 17.285156 7.558594 17.273438 7.550781 17.265625 C 7.535156 17.246094 7.523438 17.230469 7.507812 17.214844 C 7.503906 17.207031 7.503906 17.203125 7.5 17.199219 C 7.277344 16.910156 7.140625 16.5625 7.105469 16.199219 C 7.101562 16.136719 7.097656 16.074219 7.097656 16.007812 C 7.097656 15.484375 7.300781 14.992188 7.667969 14.625 C 7.722656 14.570312 7.777344 14.523438 7.832031 14.476562 C 7.855469 14.460938 7.875 14.441406 7.898438 14.425781 C 7.949219 14.386719 8.003906 14.351562 8.058594 14.320312 C 8.355469 14.144531 8.695312 14.050781 9.050781 14.050781 C 9.308594 14.050781 9.558594 14.097656 9.792969 14.195312 C 9.796875 14.195312 9.800781 14.199219 9.804688 14.199219 C 9.828125 14.210938 9.851562 14.21875 9.875 14.230469 C 9.878906 14.234375 9.886719 14.238281 9.894531 14.238281 C 9.914062 14.25 9.933594 14.261719 9.953125 14.269531 C 9.960938 14.273438 9.96875 14.277344 9.976562 14.285156 C 9.996094 14.292969 10.015625 14.304688 10.03125 14.3125 C 10.042969 14.320312 10.050781 14.324219 10.0625 14.332031 C 10.078125 14.339844 10.09375 14.351562 10.109375 14.363281 C 10.121094 14.367188 10.128906 14.375 10.140625 14.382812 C 10.15625 14.390625 10.171875 14.402344 10.1875 14.414062 C 10.195312 14.421875 10.207031 14.429688 10.214844 14.4375 C 10.230469 14.449219 10.246094 14.460938 10.261719 14.472656 C 10.273438 14.480469 10.28125 14.488281 10.289062 14.496094 C 10.308594 14.507812 10.324219 14.523438 10.339844 14.535156 C 10.347656 14.542969 10.355469 14.550781 10.363281 14.558594 C 10.386719 14.578125 10.410156 14.601562 10.433594 14.625 C 10.457031 14.648438 10.476562 14.671875 10.5 14.695312 C 10.503906 14.699219 10.507812 14.707031 10.515625 14.710938 C 10.53125 14.730469 10.546875 14.75 10.5625 14.769531 C 10.566406 14.773438 10.570312 14.777344 10.574219 14.785156 C 10.59375 14.804688 10.609375 14.824219 10.625 14.847656 C 10.625 14.851562 10.628906 14.855469 10.632812 14.855469 C 10.648438 14.882812 10.664062 14.90625 10.679688 14.929688 C 10.683594 14.929688 10.683594 14.929688 10.683594 14.929688 C 11.128906 15.609375 11.109375 16.507812 10.625 17.167969 Z M 10.789062 13.472656 C 10.777344 13.460938 10.761719 13.449219 10.746094 13.441406 C 10.726562 13.425781 10.703125 13.414062 10.679688 13.398438 C 10.660156 13.386719 10.640625 13.371094 10.621094 13.359375 C 10.59375 13.34375 10.566406 13.328125 10.539062 13.3125 C 10.523438 13.304688 10.507812 13.296875 10.492188 13.289062 C 10.457031 13.269531 10.421875 13.25 10.386719 13.234375 C 10.378906 13.230469 10.367188 13.226562 10.359375 13.222656 C 9.945312 13.023438 9.5 12.925781 9.050781 12.925781 C 9.027344 12.925781 9.007812 12.925781 8.984375 12.925781 C 10.136719 11.433594 11.519531 9.871094 13.050781 8.332031 C 13.191406 8.191406 13.332031 8.050781 13.476562 7.910156 L 13.871094 10.382812 Z M 16.703125 11.996094 C 15.171875 13.53125 13.613281 14.921875 12.121094 16.074219 C 12.136719 15.441406 11.953125 14.804688 11.578125 14.261719 L 14.660156 11.175781 L 17.125 11.566406 C 16.984375 11.710938 16.84375 11.855469 16.703125 11.996094 Z M 22.828125 4.378906 C 21.789062 6.1875 20.101562 8.382812 18.0625 10.582031 L 15.632812 10.195312 L 20.824219 4.992188 C 21.042969 4.773438 21.042969 4.417969 20.824219 4.199219 C 20.605469 3.980469 20.253906 3.980469 20.035156 4.199219 L 14.84375 9.402344 L 14.460938 6.96875 C 16.652344 4.921875 18.839844 3.230469 20.644531 2.1875 C 22.703125 1 23.597656 1.039062 23.785156 1.226562 C 23.972656 1.414062 24.015625 2.3125 22.828125 4.378906 Z M 22.828125 4.378906 "/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(42.352941%,38.823529%,100%);fill-opacity:1;" d="M 22.132812 3.324219 C 22.125 3.289062 22.113281 3.253906 22.101562 3.21875 C 22.085938 3.1875 22.070312 3.152344 22.050781 3.125 C 22.03125 3.09375 22.007812 3.066406 21.980469 3.039062 C 21.953125 3.011719 21.925781 2.988281 21.894531 2.96875 C 21.867188 2.949219 21.832031 2.929688 21.800781 2.917969 C 21.765625 2.902344 21.730469 2.894531 21.695312 2.886719 C 21.511719 2.847656 21.320312 2.910156 21.191406 3.039062 C 21.164062 3.066406 21.140625 3.09375 21.121094 3.125 C 21.101562 3.152344 21.085938 3.1875 21.070312 3.21875 C 21.054688 3.253906 21.046875 3.289062 21.039062 3.324219 C 21.03125 3.359375 21.027344 3.398438 21.027344 3.433594 C 21.027344 3.472656 21.03125 3.507812 21.039062 3.542969 C 21.046875 3.578125 21.054688 3.613281 21.070312 3.648438 C 21.085938 3.683594 21.101562 3.714844 21.121094 3.746094 C 21.140625 3.777344 21.164062 3.804688 21.191406 3.832031 C 21.296875 3.933594 21.4375 3.996094 21.585938 3.996094 C 21.621094 3.996094 21.660156 3.992188 21.695312 3.984375 C 21.730469 3.976562 21.765625 3.964844 21.800781 3.953125 C 21.832031 3.9375 21.867188 3.921875 21.894531 3.898438 C 21.925781 3.878906 21.953125 3.855469 21.980469 3.832031 C 22.007812 3.804688 22.03125 3.777344 22.050781 3.746094 C 22.070312 3.714844 22.085938 3.683594 22.101562 3.648438 C 22.113281 3.613281 22.125 3.578125 22.132812 3.542969 C 22.140625 3.507812 22.144531 3.472656 22.144531 3.433594 C 22.144531 3.398438 22.140625 3.359375 22.132812 3.324219 Z M 22.132812 3.324219 "/>
+                    </g>
+                    </svg>
+                    
+              <span class="font-medium text-gray-500">create your own SVG</span>
+            </li>
+            <li class="flex items-center py-2 space-x-4 xl:py-3">
+              <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+              <span class="font-medium text-gray-500">5508+ free icons available</span>
+            </li>
+            <li class="flex items-center py-2 space-x-4 xl:py-3">
+              <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              <span class="font-medium text-gray-500">100% free for commercial and non-commercial use</span>
+            </li>
+          </ul>
+          <button  onclick="window.location.href='/editroom'" class="flex items-center w-48 px-4 ml-5 mt-3 py-2 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
+            Create  SVG
+            <i class="fa-solid fa-circle-arrow-right text-xl ml-2"></i>
+          </button> 
+        </div>
+      </div>
+      <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img class="mx-auto sm:max-w-sm lg:max-w-full" src="img/home/dont-worry.svg" alt="feature image"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5 -->
+<section class="flex items-center justify-center py-20 bg-white min-w-screen">
+    <div class="px-16 bg-white">
+        <div class="container flex flex-col items-start mx-auto lg:items-center">
+            <p class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">Don't just take our word for it</p>
+            <h2 class="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-gray-200 lg:inline-block" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                </path>
+            </svg>
+                See what others are saying</h2>
+                <div class="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+
+            <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
+                <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
+                    <div class="flex items-center justify-center">
+                        <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1700&amp;q=80" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-center">
+                            <h4 class="font-bold text-gray-800">Venoth</h4>
+                            <p class="text-gray-600">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <blockquote class="mt-8 text-lg text-gray-500">"This is a no-brainer if you want to take your business to the next level. If you are looking for the ultimate toolset, this is it!"</blockquote>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+                    <div class="flex items-center justify-center">
+                        <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                            <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2547&amp;q=80" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-center">
+                            <h4 class="font-bold text-gray-800">Chandru</h4>
+                            <p class="text-gray-600">Front End Developer</p>
+                        </div>
+                    </div>
+                    <blockquote class="mt-8 text-lg text-gray-500">"Thanks for creating this service. My life is so much
+                        easier.
+                        Thanks for making such a great product."</blockquote>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+                    <div class="flex items-center justify-center">
+                        <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                            <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2547&amp;q=80" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-center">
+                            <h4 class="font-bold text-gray-800">Siva Kumar</h4>
+                            <p class="text-gray-600">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <blockquote class="mt-8 text-lg text-gray-500">"Thanks for creating this service. My life is so much
+                        easier.
+                        Thanks for making such a great product."</blockquote>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
+                    <div class="flex items-center justify-center">
+                        <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                            <img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1256&amp;q=80" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-center">
+                            <h4 class="font-bold text-gray-800">Cibel</h4>
+                            <p class="text-gray-600">UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <blockquote class="mt-8 text-lg text-gray-500">
+                        I Searched icons for more than and hour on the online i didn't got icon exactly what i want and i heared this tool. This tool gave me very simple UI experience and i got the svg that exactly what i want thanks...
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900" id="footer">
+    <div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8 ">
+      <div class="lg:flex lg:gap-8 justify-center">
+        <div class="mt-8 grid grid-cols-2 gap-12 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"  >
+          
+          <div class="flex text-gray-500 col-span-2 space-x-4 lg:col-span-5">
+            <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+              <span class="sr-only"> Facebook </span>
+  
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+              </svg>
+            </a>
+  
+            <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+              <span class="sr-only"> Instagram </span>
+  
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+            </a>
+  
+            <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+              <span class="sr-only"> Twitter </span>
+  
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+  
+            <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+              <span class="sr-only"> GitHub </span>
+  
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+            </a>
+  
+            <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+              <span class="sr-only"> Dribbble </span>
+  
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="pt-8 mt-12 border-t border-white/10">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <p class="text-xs text-center text-gray-400 lg:text-left">
+            Copyright &copy; 2022. Svg Master. All rights reserved.
+          </p>
+  
+          <nav class="flex justify-center text-xs text-gray-400 space-x-4 lg:justify-end">
+            <a href=""> Terms & Conditions </a>
+            <a href=""> Privacy Policy </a>
+            <a href=""> Cookies </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<%- include('footer') %>
+<script>
+    $('#nav-child-home').addClass('active');
+</script>
+</body>
+</html>

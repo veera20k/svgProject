@@ -1,0 +1,129 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/plugins/jquery-ui.min.css">
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+  font-family: 'Jost', sans-serif;
+user-select: none;
+}
+ /* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+scrollbar-width: auto;
+scrollbar-color: #667eea #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #667eea;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  }
+
+  .loader svg {
+    position: absolute;
+    animation: triangulate 1.5s ease infinite;
+  }
+
+  .loader .loader-triangle {
+    animation-delay: -0.5s;
+    fill: #ff5a5a;
+  }
+
+  .loader .loader-square {
+    animation-delay: -1s;
+    fill: #62aaff;
+  }
+
+  .loader .loader-pentagon {
+    animation-delay: 0;
+    fill: #ffd220;
+  }
+
+  @keyframes triangulate {
+
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0);
+    }
+
+    33% {
+      transform: translate3d(200%, 0, 0);
+    }
+
+    66% {
+      transform: translate3d(100%, calc(86.60259% * 2), 0) rotate(360deg);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #navbar-collapse >a:hover{
+    background-color: rgb(229 231 235);
+    color: rgb(44, 53, 68);
+    transition-duration: 300ms;
+  }
+  #navbar-collapse >a.active{
+    background-color:  rgb(79 70 229);
+    color: white;
+  }
+  html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+</style>
+
+<div class="header-2  z-20 bg-white fixed w-full bg-gray-50" style="top: 0;">
+  <nav class=" py-2 md:py-2  ">
+    <div class="container px-4 mx-auto md:flex md:items-center">
+      <div class=" ml-10 "><img src="/img/home/logo.svg" alt="" class="h-10 m-auto"> <span>Svg Master</span> </div>
+      <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+        <a href="/" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded" id="nav-child-home">Home</a>
+       
+        <a href="/icons"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded " id="nav-child-icons">Icons</a>
+        <a href="/editroom"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded " id="nav-child-create">Create SVG</a>
+        <a href="/#footer"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded " id="nav-child-contact" >Contact</a>
+          <a href="/#footer"
+          class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded"  id="nav-child-about">About</a>
+        <!-- <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>
+        <a href="#"
+          class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a> -->
+      </div>
+    </div>
+  </nav>
+</div>
+
