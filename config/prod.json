@@ -1,6 +1,6 @@
 {
     "envName": "prod",
 	"PORT": 80,
-	"hostname": "https://svgmaster.com/",
+	"hostname": "http://svgmaster.in/",
 	"secure": true
 }
